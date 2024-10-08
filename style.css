@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@keyframes blink {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+}
+    
+
+
+body{
+    color: black;
+    background: #582f9c;
+    font-family:  "Comfortaa", sans-serif;
+    overflow: hidden;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.reklamyl{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.reklamyp{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 7px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+#toggleButton {
+    position: absolute;
+    background-color: #f5f5f5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	background-color:#8971b0;
+	border-radius:28px;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 57px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #763dcc;
+}
+
+#toggleAbout {
+	position: absolute;
+    background-color: #f5f5f5;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+	background-color:#8971b0;
+	border-radius:28px;
+	border:3px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 57px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #763dcc;
+}
+
+.text {
+    position: absolute;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    width: 350px;
+    padding: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: black solid 3px;
+    border-radius: 15px;
+    background-color: rgba(99, 52, 128, 1);
+background-image: linear-gradient(90deg, rgba(99, 52, 128, 1) 0%, rgba(66, 14, 95, 1) 100%);
+}
+
+#niga1{
+    position: absolute;
+    top: 5%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
+
+
+#toggleButton:hover {
+    opacity: 0.8;
+}
+
+#toggleAbout:hover {
+    opacity: 0.8;
+}
+
+.title{
+    position: absolute;
+    background:#8971b0;
+    padding: 15px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    border-radius: 15px;
+    border: #000000 solid 3px;
+    -webkit-box-shadow: 3px 2px 46px -1px rgba(66, 68, 90, 1);
+-moz-box-shadow: 3px 2px 46px -1px rgba(66, 68, 90, 1);
+box-shadow: 3px 2px 46px -1px rgba(66, 68, 90, 1);
+}
+
+.trener {
+    display: flex;
+    gap: 10px;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center; /* Wyrównanie obrazów w pionie */
+    justify-content: center; /* Wyrównanie obrazów w poziomie */
+}
+
+
+.image-container {
+    position: relative;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    border: #000000 solid 3px;
+    margin: 0; /* Upewnij się, że marginesy są wyzerowane */
+    -webkit-box-shadow: 3px 2px 46px -1px rgba(66, 68, 90, 1);
+-moz-box-shadow: 3px 2px 46px -1px rgba(66, 68, 90, 1);
+box-shadow: 3px 2px 46px -1px rgba(66, 68, 90, 1);
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Dopasowanie obrazka bez zniekształceń */
+    transition: opacity 500ms;
+}
+
+
+.image-container img:hover {
+    opacity: 0.8;
+}
+
+.info {
+    position: relative;
+    text-align: right;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0px;
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease-out;  
+    font-size: 12px;
+    
+}
+
+.image-container.active .info {
+    max-height: 100px;  
+}
+
+
+.data {
+    position: absolute;
+    right: -360px; /* Początkowo poza ekranem */
+    top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 300px;
+    transition: right 1s ease-in-out;
+  }
+  
+  .napis {
+    font-size: 16px;
+    color: #000;
+  }
+
+
+  .chuj{
+    position: absolute;
+    left: 100%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: rgba(99, 52, 128, 1);
+    background-image: linear-gradient(90deg, rgba(99, 52, 128, 1) 0%, rgba(66, 14, 95, 1) 100%);
+    
+  }
+  
+  
